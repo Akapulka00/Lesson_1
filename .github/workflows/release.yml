@@ -11,7 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  
+      contents: write  # Даёт права создавать релизы
+      packages: write  # Если нужно публиковать пакеты
     steps:
       - uses: actions/checkout@v2
         with:
